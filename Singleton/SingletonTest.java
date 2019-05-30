@@ -1,22 +1,12 @@
 
 public class SingletonTest {
+	public static void main(String[] args) {
+		Renban c1 = Renban.getInstance();
+		Renban c2 = Renban.getInstance();
 
-	private String str = "Hello";
-	private static SingletonTest instance = new SingletonTest();     //ポイント (I)
-
-	private SingletonTest() {                                           //ポイント (II)
-		// Constructor
-	}
-
-	public static SingletonTest getInstance() {                         //ポイント (III)
-		return instance;
-	}
-
-	public void setString(String str) {
-		this.str = str;
-	}
-
-	public String getString() {
-		return str;
+		System.out.println(c1.getString() + "の製造番号: " + c1.getNumber());
+		System.out.println(c2.getString() + "の製造番号: " + c2.getNumber());
 	}
 }
+
+
