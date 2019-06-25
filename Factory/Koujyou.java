@@ -2,7 +2,9 @@
 abstract class Koujyou {
 
 	public final Seihin create() {
-		Seihin seihin = factoryMethod(); touroku(seihin);
+		//各々のクラスへ
+		Seihin seihin = factoryMethod();
+		touroku(seihin);
 		return seihin;
 	}
 

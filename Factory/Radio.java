@@ -4,6 +4,7 @@ class Radio extends Seihin{
 	private int radioSerialNumber;
 
 	public void numberring() {
+		//製造番号の取得
 		radioSerialNumber = Counter.getRadioNumber();
 	}
 
