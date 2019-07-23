@@ -1,6 +1,13 @@
 
-class AcAdapter extends JapaneseConsent implements Dengen{
+class AcAdapter extends Dengen{
+
+	private JapaneseConsent japaneseConsent;
+
+	public AcAdapter(){
+		this.japaneseConsent = new JapaneseConsent();
+	}
+
 	public int kyuuden() {
-		return (int)(power() * 0.16);
+		return (int)(japaneseConsent.power() * 0.16);
 	}
 }
